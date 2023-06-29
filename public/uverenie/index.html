@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="windexth=device-windexth, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Uverenie za polozeni predmeti</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="grb.png" alt="Image" id="grb" />
+      <h1 class="title">
+        РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА <br />
+        УНИВЕРЗИТЕТ „ГОЦЕ ДЕЛЧЕВ“ - ШТИП
+      </h1>
+      <img class="logo" src="ugd-logo.png" alt="Logo" />
+    </div>
+    <p class="paragraph">Број на досие: <b id="index"></b></p>
+    <p class="paragraph">Уверение број: <span id="random-number"></span></p>
+    <p class="paragraph">
+      Врз основа на член 155 од Законот за високото образование (Службен весник
+      бр. 82/18) и член 398 од Статут на Универзитетот „Гоце Делчев“ - Штип
+    </p>
+    <div class="container">
+      <p><u>Факултетот за информатика издава</u></p>
+      <h1>У В Е Р Е Н И Е</h1>
+      <h2>за положени испити од прв циклус</h2>
+    </div>
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>Име и презиме на студентот</td>
+          <td id="name"></td>
+        </tr>
+        <tr>
+          <td>е-маил адреса</td>
+          <td id="email"></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Во текот на стуиите, студентот ги положил следниве испити:</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Ред. бр.</th>
+          <th>Назив на предметот</th>
+          <th>Оценка (со број)</th>
+          <th>Оценка (описно)</th>
+          <th>ЕКТЦ кредити</th>
+        </tr>
+      </thead>
+      <tbody id="subjects"></tbody>
+    </table>
+    <p>
+      <b>1. Делумно реализирана студиска програма</b><br />
+      Студентот положил _<span id="number"></span> (број на положени испити) од
+      вкупниот број на испити предвидени со студиската програма со број _
+      (вкупен број на испити на студиската програма) и се стекнал со
+      <span id="ekt"></span> ЕКТС кредити.
+    </p>
+    <p>
+      <b>2. Целосно реализирана студиска програма</b><br />
+      Студентот ги извршил сите обврски по студиската програма со просечна
+      оценка ________ , со ____ ЕКТС кредити и се стекнал со квалификација од
+      ниво <u>VIA</u> и академски / стручен назив
+      __________________________________.
+    </p>
+    <div class="end">
+      <p>Датум</p>
+      <p>Декан</p>
+    </div>
+    <div class="end">
+      <p id="date"></p>
+      <p id="dean"></p>
+    </div>
+  </body>
+</html>

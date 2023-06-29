@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="windexth=device-windexth, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Uverenie za polozeni predmeti</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="./ugd-logo.png" alt="Left Image" />
+      <img class="header-right" src="./header.png" alt="Right Image" />
+    </header>
+    <aside class="left-menu">
+      <button>Почетна</button>
+      <button>Семестри</button>
+      <button>Оцени</button>
+      <button class="clicked">Барања</button>
+      <button>Огласна табла</button>
+      <button>Консултации</button>
+      <button>Документи</button>
+      <button>Одјави се</button>
+    </aside>
+    <main>
+      <div class="form-container">
+        <div class="form-header">
+          <button>Креирај е-барање</button>
+          <button>Листа на е-барања</button>
+        </div>
+        <form>
+          <div class="form-row">
+            <label for="requestType">Тип на барање:</label>
+            <select id="requestType">
+              <option value="" disabled selected hidden></option>
+              <option value="potvrda">Потврда за студент</option>
+              <option value="uverenie">Уверение за положени испити</option>
+              <option value="diploma">Издавање на диплома</option>
+              <option value="ispisnica">Издавање на исписница</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

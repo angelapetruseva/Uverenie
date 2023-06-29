@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 150px;
+  width: 100%;
+}
+
+.header-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 200px;
+  height: 100%;
+  width: calc(100% - 200px);
+  object-fit: cover;
+}
+
+.left-menu {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 200px;
+  height: calc(100vh - 150px);
+  background-color: #029a82;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.left-menu button {
+  -webkit-box-shadow: inset 0px -115px 10px -102px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: inset 0px -115px 10px -102px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0px -115px 10px -102px rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background-color: #029a82;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.left-menu .clicked {
+  color: black;
+  background-color: white;
+}
+
+.left-menu button:hover {
+  color: black;
+  background-color: white;
+}
+
+main {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+#requestType {
+  /* padding: 20px; */
+  height: 30px;
+}
+
+@media screen and (min-width: 400px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+  }
+  .form-header {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+    background-color: rgb(54, 54, 54);
+    padding: 30px;
+  }
+  input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #d71921;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 700px) {
+  #requestType {
+    width: 400px;
+  }
+}
+
+.form-container {
+  border: 1px solid gray;
+}
+
+.form-header {
+  background-color: rgb(54, 54, 54);
+}
+
+.form-header button {
+  background-color: rgb(54, 54, 54);
+  border: 1px solid rgb(54, 54, 54);
+  cursor: pointer;
+  color: gray;
+}
+
+.form-header button:hover {
+  color: white;
+}
+
+label,
+select,
+input {
+  margin-bottom: 10px;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+}
+
+.container #grb {
+  width: 80px;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.paragraph {
+  margin-bottom: 20px;
+}
+
+.table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid gray;
+  padding: 5px;
+  text-align: center;
+}
+
+tr {
+  page-break-inside: avoid;
+}
+
+.end {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
